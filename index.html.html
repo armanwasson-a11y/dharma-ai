@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Dharma AI – Hinduismus verstehen</title>
+<style>
+:root{color-scheme:dark;--bg:#101827;--panel:#182338;--panel2:#202e45;--gold:#e7b85c;--text:#f5f1e8;--muted:#b8c2d2;--line:#34435b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#26354d 0,#101827 48%);color:var(--text);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+main{max-width:850px;margin:auto;padding:24px 16px 40px}.top{text-align:center;padding:24px 10px 18px}.om{font-size:42px;color:var(--gold)}h1{font-size:clamp(30px,7vw,44px);margin:4px 0;color:var(--gold)}.sub{color:var(--muted);margin:0 auto;max-width:560px}
+.panel{background:rgba(24,35,56,.96);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 14px 40px #0003}
+.toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:14px}label{color:var(--muted);font-size:14px}select,button,textarea{font:inherit}select{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:9px}
+#chat{display:flex;flex-direction:column;gap:12px;min-height:260px;max-height:52vh;overflow:auto;padding:4px 2px 14px}
+.msg{max-width:92%;padding:12px 14px;border-radius:15px;white-space:pre-wrap}.bot{background:var(--panel2);border:1px solid var(--line);align-self:flex-start}.user{background:#76551f;align-self:flex-end;color:white}.sources{font-size:12px;color:var(--muted);margin-top:8px}
+.suggestions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}.suggestions button{background:transparent;color:var(--gold);border:1px solid #8a6a35;border-radius:999px;padding:8px 11px;font-size:13px}
+form{display:flex;gap:9px;align-items:stretch}textarea{flex:1;resize:vertical;min-height:50px;max-height:130px;background:#111c2d;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:12px}button.send{background:var(--gold);color:#241b0c;border:0;border-radius:12px;padding:0 18px;font-weight:700}
+.note{font-size:12px;color:var(--muted);margin:14px 2px 0}.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}
+@media(max-width:520px){main{padding:12px 10px 28px}.panel{padding:13px}form{flex-direction:column}button.send{padding:12px}}
+</style>
+</head>
+<body>
+<main>
+<header class="top"><div class="om">ॐ</div><h1>Dharma AI</h1><p class="sub">Hinduismus einfach verstehen – Fragen zu Dharma, Yoga, Karma und den heiligen Schriften.</p></header>
+<section class="panel" aria-label="Dharma AI Chat">
+ <div class="toolbar"><strong>Dein Gespräch</strong><label for="lang">Sprache&nbsp; <select id="lang"><option value="de">Deutsch</option><option value="en">English</option></select></label></div>
+ <div id="chat" aria-live="polite"><div class="msg bot" id="welcome">Namaste! 🙏 Ich bin Dharma AI – eine kleine Lern-Demo. Frag mich zum Beispiel: Was bedeutet Dharma?</div></div>
+ <div class="suggestions">
+  <button type="button" data-q="Was bedeutet Dharma?">Was bedeutet Dharma?</button>
+  <button type="button" data-q="Was ist Karma?">Was ist Karma?</button>
+  <button type="button" data-q="Was lehrt die Bhagavad Gita?">Bhagavad Gita</button>
+  <button type="button" data-q="Was bedeutet Moksha?">Was ist Moksha?</button>
+ </div>
+ <form id="form"><textarea id="question" placeholder="Stelle deine Frage …" aria-label="Deine Frage" required></textarea><button class="send" type="submit">Senden</button></form>
+ <p class="note">Hinweis: Dies ist eine einfache Offline-Demo mit vorbereiteten Erklärungen, keine echte KI und kein vollständiges Nachschlagewerk. Antworten sind vereinfachte Zusammenfassungen, keine wörtlichen Zitate.</p>
+</section>
+<footer class="foot">Dharma AI · Ein Lernprojekt · ॐ</footer>
+</main>
+<script>
+const answers={
+ de:[
+  {keys:["dharma"],text:"Dharma hat mehrere Bedeutungen. Je nach Zusammenhang kann es Lehre, Ordnung, Pflicht oder ein verantwortungsvolles Handeln bedeuten. Was als Dharma gilt, wird in hinduistischen Traditionen und Lebenssituationen unterschiedlich erklärt.",src:"Allgemeine Einführung – Begriff Dharma"},
+  {keys:["karma"],text:"Karma bedeutet wörtlich ungefähr „Handlung“. In vielen hinduistischen Lehren sind Handlungen und ihre Folgen miteinander verbunden. Dabei geht es nicht nur um sichtbare Taten, sondern auch um Absichten. Die verschiedenen Schulen erklären Karma nicht alle gleich.",src:"Allgemeine Einführung – Begriff Karma"},
+  {keys:["gita","bhagavad"],text:"Die Bhagavad Gita ist ein Gespräch zwischen Krishna und Arjuna im Mahabharata. Sie behandelt unter anderem Pflicht und Verantwortung (Dharma), Handeln ohne Anhaftung an den Erfolg, Erkenntnis und Hingabe. Unterschiedliche Traditionen betonen verschiedene Aspekte.",src:"Bhagavad Gita – Überblick"},
+  {keys:["moksha"],text:"Moksha bezeichnet in vielen hinduistischen Traditionen die Befreiung aus dem Kreislauf von Geburt und Wiedergeburt (Samsara). Die Wege und die genaue Bedeutung werden je nach philosophischer Schule unterschiedlich verstanden.",src:"Allgemeine Einführung – Begriff Moksha"},
+  {keys:["namaste","hallo","hi"],text:"Namaste! 🙏 Schön, dass du da bist. Du kannst mich zu Dharma, Karma, Yoga, den Veden, Upanishaden oder der Bhagavad Gita fragen.",src:"Dharma AI – Begrüßung"}
+ ],
+ en:[
+  {keys:["dharma"],text:"Dharma has several meanings. Depending on context, it can refer to teaching, order, duty, or responsible conduct. Hindu traditions explain it in different ways and in relation to a person's situation.",src:"Introduction – Dharma"},
+  {keys:["karma"],text:"Karma roughly means “action.” In many Hindu teachings, actions and their consequences are connected. Intention matters too. Different schools explain karma in different ways.",src:"Introduction – Karma"},
+  {keys:["gita","bhagavad"],text:"The Bhagavad Gita is a dialogue between Krishna and Arjuna in the Mahabharata. It explores duty, action without attachment to results, knowledge, and devotion. Different traditions emphasize different aspects.",src:"Bhagavad Gita – Overview"},
+  {keys:["moksha"],text:"Moksha refers in many Hindu traditions to liberation from the cycle of birth and rebirth (samsara). Its meaning and the paths toward it are understood differently by different schools.",src:"Introduction – Moksha"},
+  {keys:["hello","hi","namaste"],text:"Namaste! 🙏 Welcome. You can ask me about dharma, karma, yoga, the Vedas, Upanishads, or the Bhagavad Gita.",src:"Dharma AI – Greeting"}
+ ]
+};
+const chat=document.getElementById("chat"),form=document.getElementById("form"),input=document.getElementById("question"),lang=document.getElementById("lang");
+function add(text,kind,source){const el=document.createElement("div");el.className="msg "+kind;el.textContent=text;if(source){const s=document.createElement("div");s.className="sources";s.textContent="Themenhinweis: "+source;el.appendChild(s)}chat.appendChild(el);chat.scrollTop=chat.scrollHeight}
+function answer(q){const l=answers[lang.value],low=q.toLowerCase();const hit=l.find(a=>a.keys.some(k=>low.includes(k)));if(hit)return hit;
+return {text:lang.value==="de"?"Danke für deine Frage! Dazu habe ich in dieser kleinen Demo noch keine passende Erklärung gespeichert. Probiere bitte eine Frage zu Dharma, Karma, Bhagavad Gita oder Moksha.":"Thanks for your question! This small demo does not have a prepared answer for it yet. Try asking about dharma, karma, the Bhagavad Gita, or moksha.",src:lang.value==="de"?"Demo-Wissensdatenbank":"Demo knowledge base"}}
+function send(q){q=q.trim();if(!q)return;add(q,"user");const a=answer(q);add(a.text,"bot",a.src);input.value=""}
+form.addEventListener("submit",e=>{e.preventDefault();send(input.value)});
+document.querySelectorAll("[data-q]").forEach(b=>b.addEventListener("click",()=>send(b.dataset.q)));
+lang.addEventListener("change",()=>{document.getElementById("welcome").textContent=lang.value==="de"?"Namaste! 🙏 Ich bin Dharma AI – eine kleine Lern-Demo. Frag mich zum Beispiel: Was bedeutet Dharma?":"Namaste! 🙏 I am Dharma AI – a small learning demo. For example, ask: What does dharma mean?"});
+</script>
+</body>
+</html>
