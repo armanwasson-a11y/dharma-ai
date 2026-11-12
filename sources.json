@@ -1,0 +1,123 @@
+{
+  "title": "Dharma AI – Starterbibliothek",
+  "notice": "Kleine kuratierte Demonstrationssammlung; kein vollständiger Korpus.",
+  "entries": [
+    {
+      "id": "gita-2-47",
+      "title": "Handeln und Ergebnis",
+      "topic": "Karma Yoga",
+      "reference": "Bhagavad Gita 2.47",
+      "languages": [
+        "sa",
+        "de",
+        "en"
+      ],
+      "keywords": [
+        "karma",
+        "handeln",
+        "handlung",
+        "ergebnis",
+        "frucht",
+        "arbeit",
+        "pflicht",
+        "action",
+        "result",
+        "fruits"
+      ],
+      "explanation_de": "Der Vers 2.47 wird häufig so verstanden: Ein Mensch hat Verantwortung für sein Handeln, aber nicht vollständige Kontrolle über die Ergebnisse. Er ermutigt dazu, die eigene Aufgabe gewissenhaft zu erfüllen, ohne nur vom gewünschten Erfolg abhängig zu sein. Verschiedene hinduistische Schulen erklären die Einzelheiten unterschiedlich.",
+      "explanation_en": "Bhagavad Gita 2.47 is commonly understood to teach that a person is responsible for their actions but does not fully control the results. It encourages sincere action without becoming dependent only on a desired outcome. Hindu traditions interpret the details in different ways.",
+      "source_note": "Paraphrase for learning, not a verbatim translation. A specific Sanskrit edition and translation must be selected before publishing a quotation."
+    },
+    {
+      "id": "gita-4-7",
+      "title": "Krishna über das Wiederherstellen des Dharma",
+      "topic": "Dharma und göttliches Eingreifen",
+      "reference": "Bhagavad Gita 4.7–4.8",
+      "languages": [
+        "sa",
+        "de",
+        "en"
+      ],
+      "keywords": [
+        "dharma",
+        "krishna",
+        "avatar",
+        "avatara",
+        "gerechtigkeit",
+        "ordnung",
+        "cosmic order",
+        "righteousness"
+      ],
+      "explanation_de": "In der Bhagavad Gita 4.7–4.8 spricht Krishna davon, dass er erscheint, wenn Dharma abnimmt und Adharma zunimmt, um das Gute zu schützen und Dharma wiederherzustellen. Die Bedeutung dieses göttlichen Eingreifens wird in den Traditionen unterschiedlich ausgelegt.",
+      "explanation_en": "In Bhagavad Gita 4.7–4.8, Krishna says that he manifests when dharma declines and adharma rises, in order to protect the good and re-establish dharma. Traditions explain the nature of this divine intervention in different ways.",
+      "source_note": "Paraphrase for learning, not a verbatim translation. Confirm wording against the chosen edition."
+    },
+    {
+      "id": "gita-6-5",
+      "title": "Selbstführung",
+      "topic": "Yoga und Geist",
+      "reference": "Bhagavad Gita 6.5",
+      "languages": [
+        "sa",
+        "de",
+        "en"
+      ],
+      "keywords": [
+        "geist",
+        "selbst",
+        "mind",
+        "self",
+        "yoga",
+        "selbstkontrolle",
+        "self-discipline"
+      ],
+      "explanation_de": "Bhagavad Gita 6.5 betont die Bedeutung der eigenen inneren Ausrichtung und Selbstführung. Der Geist kann im spirituellen Weg eine unterstützende Kraft sein; der Vers lädt dazu ein, Verantwortung für die eigene Entwicklung zu übernehmen.",
+      "explanation_en": "Bhagavad Gita 6.5 emphasizes inner orientation and self-guidance. The mind can become a support on the spiritual path; the verse invites a person to take responsibility for their own development.",
+      "source_note": "Paraphrase for learning, not a verbatim translation."
+    },
+    {
+      "id": "concept-dharma",
+      "title": "Was bedeutet Dharma?",
+      "topic": "Grundbegriffe",
+      "reference": "Hinduistische Philosophien – Überblick; kein einzelner Vers",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "keywords": [
+        "dharma",
+        "pflicht",
+        "ordnung",
+        "ethik",
+        "recht",
+        "meaning",
+        "duty",
+        "ethics"
+      ],
+      "explanation_de": "Dharma hat je nach Zusammenhang mehrere Bedeutungen. Dazu gehören unter anderem Ordnung, Lehre, verantwortliches Handeln und eine angemessene Pflicht. Es gibt keine einzige deutsche Übersetzung, die alle Bedeutungen abdeckt. Was Dharma konkret bedeutet, kann von Lebenssituation und hinduistischer Tradition abhängen.",
+      "explanation_en": "Dharma has several meanings depending on context, including order, teaching, responsible conduct, and an appropriate duty. No single English translation captures every meaning. Its practical meaning can depend on a person's situation and Hindu tradition.",
+      "source_note": "General introductory summary, not a quotation from one scripture."
+    },
+    {
+      "id": "concept-moksha",
+      "title": "Was bedeutet Moksha?",
+      "topic": "Grundbegriffe",
+      "reference": "Hinduistische Philosophien – Überblick; kein einzelner Vers",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "keywords": [
+        "moksha",
+        "befreiung",
+        "samsara",
+        "wiedergeburt",
+        "liberation",
+        "rebirth"
+      ],
+      "explanation_de": "Moksha bezeichnet in vielen hinduistischen Traditionen die Befreiung aus Samsara, dem Kreislauf von Geburt und Wiedergeburt. Die Schulen unterscheiden sich darin, wie diese Befreiung verstanden wird und welche Rolle Erkenntnis, Hingabe oder Handeln dabei spielen.",
+      "explanation_en": "In many Hindu traditions, moksha means liberation from samsara, the cycle of birth and rebirth. Schools differ in how liberation is understood and in the roles of knowledge, devotion, and action.",
+      "source_note": "General introductory summary, not a quotation from one scripture."
+    }
+  ]
+}
