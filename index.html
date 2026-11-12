@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Dharma AI erklärt Hinduismus verständlich und mit Quellenhinweisen.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Dharma AI – Wissen über den Hinduismus</title>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">ॐ</div>
+        <div><div class="brand-name">Dharma AI</div><div class="brand-sub">Hinduismus verständlich entdecken</div></div>
+      </div>
+      <div class="top-actions">
+        <label class="sr-only" for="language">Sprache</label>
+        <select id="language" aria-label="Antwortsprache"><option value="de">Deutsch</option><option value="en">English</option></select>
+        <span class="status"><i></i> Testversion</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">DEIN WISSENSBEGLEITER</div>
+      <h1>Namaste. <span>🙏</span></h1>
+      <p>Stelle Fragen über den Hinduismus. Ich erkläre Begriffe, Traditionen und Schriften möglichst einfach und respektvoll.</p>
+      <div class="chips">
+        <button class="suggestion" data-q="Was bedeutet Dharma?">Was bedeutet Dharma?</button>
+        <button class="suggestion" data-q="Was lehrt die Bhagavad Gita über Karma?">Karma in der Gita</button>
+        <button class="suggestion" data-q="Was ist Moksha?">Was ist Moksha?</button>
+      </div>
+    </section>
+
+    <section class="chat-card" aria-label="Chat mit Dharma AI">
+      <div class="chat-heading"><div><strong>Gespräch</strong><small id="mode-label">Verbinde mit der Wissensbibliothek …</small></div><button id="clear" class="text-button">Neues Gespräch</button></div>
+      <div id="messages" class="messages" aria-live="polite">
+        <article class="message assistant">
+          <div class="avatar">ॐ</div>
+          <div class="bubble"><strong>Dharma AI</strong><p>Willkommen! Ich bin deine Lernbegleiterin für den Hinduismus. Meine Bibliothek ist noch eine kleine Testsammlung. Frage mich etwas zu Dharma, Karma oder der Bhagavad Gita.</p></div>
+        </article>
+      </div>
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="question">Deine Frage</label>
+        <textarea id="question" rows="1" maxlength="1500" placeholder="Stelle deine Frage …" required></textarea>
+        <button id="send" type="submit" aria-label="Senden">➤</button>
+      </form>
+      <div class="disclaimer">Dharma AI ist ein Lernprojekt, keine religiöse Autorität. Prüfe wichtige Aussagen anhand der angegebenen Ausgaben und Traditionen.</div>
+    </section>
+
+    <footer><span>🕉️ Dharma AI</span><span>Eine unabhängige Bildungs-Demo</span></footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
